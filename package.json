@@ -1,0 +1,22 @@
+{
+  "name": "cordova-plugin-cookie-flush",
+  "version": "0.0.1",
+  "dependencies": {},
+  "peerDependencies": {
+    "cordova": "^10.0.0"
+  },
+  "keywords": [
+    "android",
+    "cordova",
+    "cookie",
+    "flush"
+  ],
+  "author": "Max Marinich",
+  "maintainers": [
+    {
+      "name": "Max Marinich",
+      "email": "max.marinich@gmail.com"
+    }
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-cookie-flush" version="0.0.1">
+    <name>CookieFlush</name>
+    <description>Cordova Cookie Flush Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,cookie,flush</keywords>
+    <js-module src="www/CookieFlush.js" name="CookieFlush">
+        <clobbers target="CookieFlush" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="CookieFlush">
+                <param name="android-package" value="cordovaPluginCookieFlush.CookieFlush"/>
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"/>
+        <source-file src="src/android/CookieFlush.java" target-dir="src/cordova-plugin-cookie-flush/CookieFlush"/>
+    </platform>
+</plugin>
